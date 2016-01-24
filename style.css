@@ -1,22 +1,9 @@
 html, body {
   margin: 0;
   font-family: helvetica, sans-serif;
-  background-color: #bbb;
 }
 
-ul {
-  list-style: none;
-}
-
-a {
-  color: #009999;
-  text-decoration: none;
-}
-
-a:hover#menu-icon {
-  background-color: #444;
-}
-
+/* Main navigation. Code by student No. 239846 Cand. 141 */
 header {
   background: white;
   width: 100%;
@@ -24,9 +11,23 @@ header {
   border-bottom: 1px solid gray;
 }
 
+.fixedbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+#logo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#longlogo {
+  display: none;
+}
+
 #menu-icon {
-  width: 40px;
-  height: 40px;
   display: inline-block;
 }
 
@@ -58,7 +59,28 @@ nav:hover ul {
   display: block;
 }
 
+ul {
+  list-style: none;
+  color: gray;
+}
+
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover#menu-icon {
+  background-color: #444;
+}
+
+.selected {
+  color: #00B9B9;
+}
+/* Main navigation end */
+
+/* Top part image on index page. Code by student No. 239846 Cand. 141 */
 #topimage {
+  margin-top: 60px;
   height: 200px;
   background-image: url("img/bryggen.jpg");
   background-size: 100%;
@@ -72,33 +94,253 @@ nav:hover ul {
   font-size: 2.3em;
   padding-top: 77px;
 }
+/* Top part image on index page end */
 
-section article {
-  margin: 30px;
+/* Top part with page title. Code by student No. 239846 Cand. 141 */
+#top {
+  height: 200px;
+  background-color: #00B9B9;
+  margin-top: 60px;
 }
 
-footer {
-  background-color: #333;
-  color: #ddd;
-  padding: 30px;
-  clear: both;
+#top h1 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding-top: 60px;
+  font-size: 2.3em;
 }
 
+#top p {
+  color: white;
+  text-align: center;
+}
+/* Top part with page title end */
+
+/* Main contents constructure. Code by student No. 239846 Cand. 141 */
+.main article {
+  border-bottom: 1px solid #C3C3C3;
+  margin: 40px;
+}
+
+.main article:last-child {
+  border-bottom: none;
+}
+
+.main img{
+  display: block;
+  width: 100%;
+}
+/* Main contents constructure end */
+
+/* Sidebar. Code by student No. 239846 Cand. 141 */
 .sidebar {
   display: none;
 }
 
-section>h2 {
-  margin-left: 30px;
+.sidebar ul {
+  padding-left: 20px;
+  position: fixed;
 }
 
-/* from here > 768px */
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.tothetop {
+  margin-top: 40px;
+  color: black;
+  font-size: 15px;
+}
+/* Sidebar end */
+
+/* Index page. Code by student No. 239846 Cand. 141 */
+.intro {
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #DDE4E6;
+}
+
+.intro h2 {
+  margin-top: 0;
+}
+
+.happening {
+  margin: 40px;
+}
+
+.happening h2 {
+  text-align: center;
+}
+
+.happening article {
+  float: left;
+  margin: 20px 0;
+}
+
+.happening article img {
+  width: 100%;
+}
+/* Index page end */
+
+/* Widget. Code by student No. 239846 Cand. 141 */
+.widget {
+  clear: both;
+  margin: auto;
+  width: 60%;
+}
+/* Widget end */
+
+/* Interview page. Code by student No. 239846 Cand. 141 */
+.interview section {
+  text-align: center;
+}
+
+.interview article {
+  margin-bottom: 90px;
+  border-bottom: none;
+}
+
+.interview img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.interview h2 {
+  font-style: italic;
+  font-family: serif;
+  font-size: 30px;
+  margin-left: -22px;
+  color: black;
+}
+
+.interviewcon {
+  border-top: 1px solid #ccc;
+  margin-top: -40px;
+  padding: 20px 0;
+}
+
+.interviewcon section {
+  margin-bottom: 30px;
+}
+
+.interviewcon h4 {
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+.interviewcon p {
+  font-weight: normal;
+  margin: 30px 0 60px 20px;
+  color: gray;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.back {
+  padding-top: 40px;
+  clear: both;
+}
+
+.back a {
+  text-decoration: underline;
+  color: #00B9B9;
+}
+/* Interview page end */
+
+/* Contact us page. Code by student cand. 162 stud. 229730 */
+#map {
+  margin-left: 40px;
+  width: 80%;
+  height: 500px;
+  margin-top: 50px;
+  border: none;
+}
+
+#contactinfo {
+  margin-left: 40px;
+  margin-top: -10px;
+  margin-bottom: 100px;
+}
+
+#contactinfo h3 {
+  margin-top: 50px;
+}
+/* Contact us page end */
+
+/* Contents arrange. Code by student No. 239846 Cand. 141 */
+.aboutbergen h3 {
+  margin-top: 50px;
+}
+
+#weather img {
+  margin-top: 5px;
+}
+
+#apps img {
+  width: 200px;
+  margin-right: 15px;
+  border: 1px solid gray;
+}
+
+#apps section {
+  padding-bottom: 40px;
+}
+
+#apps .clear {
+  visibility: hidden;
+  clear: both;
+  margin: 0px;
+}
+
+#pack h4, #school h3 {
+  margin-top: 40px;
+}
+
+#place ul, #school ul, #koreanfood ul{
+  list-style-type: disc;
+  margin-bottom: 50px;
+}
+
+#usefulsite p {
+  margin-bottom: 50px;
+}
+/* Contents arrange end */
+
+/* Link underline. Code by student cand. 162 stud. 229730 */
+.underline{
+  text-decoration: underline;
+}
+/* Link underline end*/
+
+/* Photo credit. Code by student cand. 162 stud. 229730 */
+.credit{
+  color: gray; 
+  font-size: small;
+  margin-top: 5px;
+}
+/* Photo credit end*/
+
+/* Footer. Code by student No. 239846 Cand. 141 */
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 40px;
+  clear: both;
+}
+/* footer end*/
+
+
+
+/******************** from here > 768px ********************/
 @media screen and (min-width: 768px) {
 
-  #menu-icon {
-    display: none;
-  }
-
+  /* Main navigation. Code by student No. 239846 Cand. 141 */
   nav {
     padding: 0;
   }
@@ -118,7 +360,37 @@ section>h2 {
     padding: 10px 15px;
   }
 
+  nav li a:hover {
+    color: darkgray;
+  }
+
+  #menu-icon {
+    display: none;
+  }
+
+  .fixedbar {
+    position: inherit;
+  }
+  /* Main navigation end */
+
+  /* Index page. Code by student No. 239846 Cand. 141 */
+  .happening article {
+    width: 48%;
+    float: left;
+  }
+
+  .happening #pepperkakebyen {
+    float: right;
+  }
+  /* Index page end */
+
+  /* Top part. Code by student No. 239846 Cand. 141 */
+  #top {
+    margin-top: 0;
+  }
+
   #topimage {
+    margin-top: 0;
     height: 430px;
   }
 
@@ -126,20 +398,151 @@ section>h2 {
     font-size: 4em;
     padding-top: 180px;
   }
+  /* Top part end */
 
+  /* Sidebar. Code by student No. 239846 Cand. 141 */
   .sidebar {
     display: block;
-    float: left;
+    float: right;
     width: 20%;
+    margin-top: 20px;
   }
+  /* Sidebar end */
 
+  /* Contents arrange. Code by student No. 239846 Cand. 141 */
   .main {
     float: left;
-    border-left: 1px solid gray;
+    width: 74%;
   }
+
+  .main article {
+    margin-right: 0;
+  }
+  /* Contents arrange end */
+
+  /* Interview page. Code by student No. 239846 Cand. 141 */
+  .interview {
+    width: 92%;
+  }
+
+  .interview img {
+    float: left;
+  }
+
+  .interview section {
+    float: left;
+    margin-left: 50px;
+    text-align: left;
+  }
+
+  .interview article {
+    clear: both;
+    width: 100%;
+    height: 200px;
+    padding-bottom: 50px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .interview h2 {
+    font-size: 35px;
+  }
+
+  .interviewcon section {
+    margin-left: 0px;
+  }
+  /* Interview page end */
+  
+  /* Contact us page. Code by student cand. 162 stud. 229730 */
+  #map {
+    height: 500px;
+    width: 50%;
+    float: left;
+    margin-bottom: 200px;
+  }
+
+  #contactinfo {
+    float: left;
+    margin-top: 0;
+  }
+  /* contact us page end */
+}
+
+/******************** from here > 992px ********************/
+@media screen and (min-width: 992px) {
+
+  /* Main navigation logo change. Code by student No. 239846 Cand. 141 */
+  #longlogo {
+    display: inline;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  #logo {
+    display: none;
+  }
+  /* logo change end */
+
+  /* Index page. Code by student No. 239846 Cand. 141 */
+  .happening article {
+    width: 30%;
+  }
+
+  .happening #pepperkakebyen {
+    float: left;
+    margin: 20px 60px;
+  }
+  /*Index page end */
+
+  /* Widget. Code by student No. 239846 Cand. 141 */
+  .widget {
+    clear: none;
+    float: left;
+    margin-top: 20px;
+    width: 20%;
+  }
+  /* Widget end */
+
+  /* Contents arrange. Code by student No. 239846 Cand. 141 */
+  #apps .app {
+    clear: both;
+  }
+
+  #apps img{
+    float: left;
+    width: 10%;
+  }
+
+  #apps .appcon {
+    float: left;
+    width: 80%;
+    margin: 0;
+  }
+
+  #apps section h3 {
+    margin-top: 0;
+  }
+  /* Contents arrange end */
 
 }
 
-/* from here > 992px */
+/******************** from here > 1200px ********************/
+@media screen and (min-width: 1200px) {
 
-/* from here > 1200px */
+  #wrapper, footer p {
+    margin: auto;
+    width: 80%;
+  }
+
+  #topimage {
+    height: 430px;
+  }
+
+  /* Contact us page. Code by student cand. 162 stud. 229730 */
+  #map {
+    margin-left: 0;
+    width: 70%; 
+  }
+  /* Contact us page end */
+
+}

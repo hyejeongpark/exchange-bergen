@@ -1,22 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Welcome to Bergen</title>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex, nofollow"> 
+    <meta name="robots" content="noarchive">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
   </head>
 
+  <!-- Main structure of the site. Code by student No. 239846 Cand. 141 -->
   <body>
-    <header>
-      <nav>
-        <a href="#"><img src="img/menu.png" id="menu-icon"></a>
+    <!-- Main navigation. Code by student No. 239846 Cand. 141 -->
+    <header class="fixedbar">
+      <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+      <a href="index.html"><img src="img/longlogo.png" alt="logo" id="longlogo"></a>
+
+      <nav id="menu">
+        <a href="#"><img src="img/menu.png" alt="menu" id="menu-icon"></a>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="thingstoknow.html">Things to know</a></li>
-            <li><a href="placestovisit.html">Places to visit</a></li>
+            <li><a href="index.html" class="selected">Home</a></li>
+            <li><a href="aboutbergen.html">About Bergen</a></li>
+            <li><a href="tips.html">Tips</a></li>
             <li><a href="interview.html">Interview</a></li>
-            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
           </ul>
       </nav>
     </header>
@@ -25,18 +33,38 @@
       <h1>Welcome to Bergen</h1>
     </section>
 
-    <section>
-      <article>
-        <h2>some title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum convallis ipsum mi, et ultrices justo tristique quis. Fusce imperdiet augue lorem, a tincidunt nibh malesuada vel. Proin dignissim eu justo vel semper. Suspendisse fermentum, magna eget feugiat pharetra, augue quam hendrerit risus, vel aliquet purus quam in augue. Nulla felis nibh, accumsan eu massa id, maximus porta eros. Sed sit amet turpis non mauris gravida elementum non sed nunc. Sed imperdiet placerat erat id dignissim. Etiam est leo, molestie sed mi vel, mollis porttitor turpis. Nullam commodo pulvinar massa, eget porta tortor volutpat in.
-
-        Proin sollicitudin semper molestie. Vestibulum posuere ante at molestie luctus. Suspendisse condimentum magna vitae ipsum luctus, vel facilisis dolor porta. Integer ut tincidunt tortor. Vivamus eu leo et arcu vestibulum placerat a vitae velit. Donec id pellentesque ipsum. Etiam sed cursus ipsum. Integer nec fermentum elit. Pellentesque vehicula consequat dui ut efficitur. Suspendisse eget arcu nibh. Donec aliquam velit risus, ut commodo nunc ornare vel.</p>
-      </article>
+    <section class="intro">
+      <h2>Do you want to study in Bergen?</h2>
+      <p>On this site you can learn facts about Bergen, find useful tips, read interviews with students!</p>
     </section>
 
+    <section id="wrapper">
+      <section class="happening">
+        <h2>Happenings in Bergen now!</h2>
+        <article>
+          <img src="img/lysfest.jpg" alt="lysfest">
+          <p class="credit"> by <a href="http://www.visitbergen.no/481/" class="underline"> Visitbergen </a></p>
+          <p>The Festival of Lights is here, Saturday Nov. 28 at the Festival Square at 16:00. The event has grown to become one of the Bergen 's finest and strongest before the Christmas holiday. There will be lovely music with singalong and a magical lighting experience. You can read more about it on this site: <a href="http://www.visitbergen.no/481/" class="underline">Visitbergen</a></p>
+        </article>
+
+        <article id="pepperkakebyen">
+          <img src="img/pepperkakebyen.jpg" alt="pepperkakebyen">
+          <p class="credit"> by <a href="http://www.bergensentrum.no/pepperkakebyen" class="underline"> Pepperkakebyen </a> </p>
+          <p>Pepperkakebyen (Gingerbreadtown) is an event from Nov. 21 all the way to Des. 31, where everybody can contribuate with some sort of gingerbread sculpture. You can read more about it on this site: <a href="http://www.bergensentrum.no/pepperkakebyen" class= "underline"> Pepperkakebyen</a>.</p>
+        </article>
+
+        <!--Widget. Code by student No. 239846 Cand. 141-->
+        <section class="widget">
+          <!-- Currency Converter Script - (FX-EXCHANGE.COM) -->
+          <div style="width:100%;border:1px solid #00B9B9;"><div style="text-align:center;background-color:#00B9B9;width:100%;font-size:13px;font-weight:bold;height:18px;padding-top:2px;"><a href="http://www.fx-exchange.com/" target="_blank" style="color:#FFFFFF;text-decoration:none;">Currency Converter</a></div><script type="text/javascript" src="http://widget.fx-exchange.com/converter.php?fg=en&amp;ff=NOK&amp;ft=KRW&amp;fa=1&amp;cb=FFFFFF&amp;cc=&amp;fy=1"></script></div>
+          <!-- End of Currency Converter Script -->
+        </section>
+      </section>
+    </section>
+
+    <!--Footer. Code by student No. 239846 Cand. 141-->
     <footer>
-      <p>Copyrights</p>
-      <p>Contact info</p>
+      <p>&copy; 2015 Korean Students in Bergen<p>
     </footer>
 
   </body>

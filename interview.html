@@ -1,41 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Meet our students</title>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="robots" content="noindex, nofollow"> 
+    <meta name="robots" content="noarchive">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
   </head>
 
+  <!-- Main structure of the site. Code by student No. 239846 Cand. 141 -->
   <body>
-    <header>
+    <!-- Main navigation. Code by student No. 239846 Cand. 141 -->
+    <header class="fixedbar">
+      <a href="index.html"><img src="img/logo.png" alt="logo" id="logo"></a>
+      <a href="index.html"><img src="img/longlogo.png" alt="logo" id="longlogo"></a>
       <nav id="menu">
-        <a href="#"><img src="img/menu.png" id="menu-icon"></a>
+        <a href="#"><img src="img/menu.png" alt="menu" id="menu-icon"></a>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="thingstoknow.html">Things to know</a></li>
-            <li><a href="placestovisit.html">Places to visit</a></li>
-            <li><a href="interview.html">Interview</a></li>
-            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="aboutbergen.html">About Bergen</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="interview.html" class="selected">Interview</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
           </ul>
       </nav>
     </header>
 
-    <section>
-      <section>
-        <h2>Interview</h2>
+    <section id="top">
+      <h1>Interview</h1>
+      <p>Meet other students</p>
+    </section>
+
+    <!-- Content of this page. Code by student No. 239846 Cand. 141 -->
+    <section id="wrapper">
+      <section class="main interview">
         <article>
-          <h3>person1</h3>
-          <p>blablabla</p>
+          <a href="hyejeong.html">
+            <img src="img/hyejeong.jpg" alt="hyejeong">
+            <section>
+            <h2>"The memory I can't forget"</h2>
+            <h3>Hyejeong Park</h3>
+            <p>South Korea</p>
+            </section>
+          </a>
         </article>
+
         <article>
-          <h3>person2</h3>
-          <p>blablabla</p>
+          <a href="jinyoung.html">
+            <img src="img/jinyoung.jpg" alt="jinyoung">
+            <section>
+            <h2>"Memorial and exciting life"</h2>
+            <h3>Jinyoung Lee</h3>
+            <p>South Korea</p>
+            </section>
+          </a>
+        </article>
+        
+        <article>
+          <a href="sara.html">
+            <img src="img/sara.jpg" alt="sara">
+            <section>
+            <h2>"Contact with different culture"</h2>
+            <h3>Sara Kim</h3>
+            <p>South Korea</p>
+            </section>
+          </a>
         </article>
       </section>
     </section>
+
+    <!--Footer. Code by student No. 239846 Cand. 141-->
     <footer>
-      <p>Contact info</p>
+      <p>&copy; 2015 Korean Students in Bergen<p>
     </footer>
 
   </body>
